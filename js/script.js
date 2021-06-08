@@ -43,6 +43,11 @@ $('.txt-slider').slick({
   asNavFor: '.img-slider',
 });
 
+// COUNTER UP
+$('.counter').counterUp({
+    delay: 10,
+    time: 2000
+});
 
 // MAKING A STICKY NAVBAR
 $(function(){

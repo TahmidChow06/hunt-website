@@ -675,10 +675,12 @@ nav ul li a:hover{
  
 /* PRICING PART START */
 #pricing-part{
-  margin-top: 100px;
+  padding: 80px 0;
+}
+#pricing-part .title p{
+  margin-bottom: 65px;
 }
 #pricing-part .price{
-  height: 300px;
   background: #f1f1f1;
   position: relative;
 }
@@ -694,10 +696,11 @@ nav ul li a:hover{
   font-weight: 500;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
+  transition: all linear .3s;
 }
 #pricing-part .price .price-circle{
   position: absolute;
-  top: 21%;
+  top: 14%;
   left: 50%;
   transform: translateX(-50%);
   width: 100px;
@@ -719,6 +722,7 @@ nav ul li a:hover{
   align-items: center;
   flex-direction: column;
   color: #fff;
+  transition: all linear .3s;
 }
 #pricing-part .price-circle .cost{
   font-size: 28px;
@@ -751,4 +755,35 @@ nav ul li a:hover{
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   clip-path: polygon(0 36%, 100% 0, 100% 100%, 0% 100%);
+  transition: all linear .3s;
+}
+/* PRICING PART HOVER */
+#pricing-part .price:hover h3,
+#pricing-part .price:hover .price-rate,
+#pricing-part .price:hover h4{
+  background: var(--primary-color);
+}
+/* COUNTER PART START */
+#counter-part{
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,.7)), url('../images/counter-bg.jpg') no-repeat center;
+  background-size: cover;
+  padding: 80px 0;
+  background-attachment: fixed;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+  overflow: hidden;
+}
+#counter-part .rotate{
+  rotate: -4.25deg;
+}
+#counter-part .item{
+  border: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+}
+/* COUNTER PART FONT */
+#counter-part .item h2{
+  padding-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #fff;
 }
