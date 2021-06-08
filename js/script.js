@@ -25,6 +25,25 @@ $('.service-slider').slick({
   centerMode: true,
   centerPadding: "0",
 });
+// TESTI PART SLIDER
+$('.img-slider').slick({
+  slidesToShow: 3,
+  vertical: true,
+  prevArrow: "<i class='fa fa-chevron-up prevslid3'></i>",
+  nextArrow: "<i class='fa fa-chevron-down nextslid3'></i>",
+  centerMode: true,
+  centerPadding: "0",
+  asNavFor: '.txt-slider',
+});
+
+// TESTI IMG SLIDER
+$('.txt-slider').slick({
+  arrows: false,
+  fade: true,
+  asNavFor: '.img-slider',
+});
+
+
 // MAKING A STICKY NAVBAR
 $(function(){
 var navbar = $('.header-inner');
