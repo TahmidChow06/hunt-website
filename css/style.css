@@ -139,7 +139,7 @@ h1,h2,h3,h4,h5,h6,p{
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.item p{
+#about-part .item p{
   padding-bottom: 30px;
   font-size: 14px;
 }
@@ -773,7 +773,7 @@ nav ul li a:hover{
   overflow: hidden;
 }
 #counter-part .rotate{
-  rotate: -4.25deg;
+  transform: rotate(-4.25deg);
 }
 #counter-part .item{
   border: 1px solid #fff;
@@ -786,4 +786,191 @@ nav ul li a:hover{
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
   color: #fff;
+}
+#counter-part .item p{
+  padding-bottom: 30px;
+}
+/* TEAM PART START */
+#team-part{
+  padding: 80px 0;
+}
+#team-part .title p{
+  margin-bottom: 65px;
+  width: 54%;
+}
+#team-part .item{
+  text-align: center;
+  border: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+#team-part .item .img{
+  background: #f1f1f1;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+  position: relative;
+} 
+#team-part .item .img .overlay{
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  background: rgba(254, 198, 0, .7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: .5s ease;
+}
+#team-part .item .img .overlay i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #000;
+}
+#team-part .item .img img{
+  margin-top: 20px;
+}
+#team-part .item .details h3{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  color: #111;
+  margin-top: 10px;
+}
+#team-part .item .details p{
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: #444;
+  padding-bottom: 10px;
+}
+#team-part .item:hover .overlay{
+  height: 100%;
+  opacity: 1;
+}
+#team-part .item:hover .social{
+  margin-top: 0;
+  opacity: 1;
+}
+#team-part .social{
+  margin-top: -30px;
+  opacity: 0;
+  transition: all linear .3s;
+}
+#team-part .social i{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #111;
+  font-size: 16px;
+  border: 1px solid #111;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all linear .3s;
+}
+#team-part .social i:hover{
+  background: var(--primary-color);
+  border: none;
+}
+
+/* SPONSOR PART START */
+#sponsor-part{
+  padding: 80px 0;
+  background: #f1f1f1;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+  overflow: hidden;
+}
+#sponsor-part .rotate{
+  transform: rotate(-4.25deg);
+}
+#sponsor-part .sponsor{
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 40px 10px;
+  margin: 0 10px;
+}
+#sponsor-part .slick-center{
+  border-color: var(--primary-color);
+}
+
+/* FOOTER PART START */
+footer{
+  background: #222;
+  padding-top: 80px;
+  margin-top: -70px;
+  overflow: hidden;
+}
+footer .logo{
+  text-align: center;
+  border-bottom: 1px solid #bbb;
+  transform: rotate(-4deg);
+  padding-bottom: 20px;
+}
+footer .logo img{
+  transform: rotate(4deg);
+}
+footer .details{
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+}
+footer .details i{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  background: var(--primary-color);
+  text-align: center;
+  border-radius: 50%;
+  color: #353535;
+  margin-bottom: 20px;
+  /* margin-top: 50px; */
+}
+footer .details .item{
+  border-right: 1px solid #ddd;
+}
+footer .social{
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+footer .social h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+footer .social i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  background: #f1f1f1;
+  border-radius: 50%;
+  color: #353535;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all linear .3s;
+}
+footer .social i:hover{
+  background: var(--primary-color);
+}
+footer .copyright{
+  font-family: 'Raleway', sans-serif;
+  color:  #fff ;
+  font-size: 14px;
+  padding: 20px 0;
+  background: #353535;
+  text-align: center;
+}
+footer .copyright .hunt{
+  color: var(--primary-color);
+  font-weight: 500;
 }

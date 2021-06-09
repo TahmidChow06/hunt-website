@@ -20,6 +20,8 @@ $('.venobox').venobox();
 $('.service-slider').slick({
   slidesToShow: 3,
   vertical: true,
+  verticalSwiping: true,
+  focusOnSelect: true,
   prevArrow: "<i class='fa fa-chevron-up prevslid2'></i>",
   nextArrow: "<i class='fa fa-chevron-down nextslid2'></i>",
   centerMode: true,
@@ -41,6 +43,15 @@ $('.txt-slider').slick({
   arrows: false,
   fade: true,
   asNavFor: '.img-slider',
+});
+
+// SPONSOR IMG SLIDER
+$('.sponsor-slider').slick({
+  arrows: false,
+  slidesToShow: 5,
+  centerMode: true,
+  centerPadding: "0",
+  focusOnSelect: true
 });
 
 // COUNTER UP
