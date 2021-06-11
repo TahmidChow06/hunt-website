@@ -6,7 +6,7 @@ $('.banner-slider').slick({
   autoplay: true,
   infinite: true,
   prevArrow: "<i class='fas fa-arrow-circle-left prevslid'></i>",
-  nextArrow: "<i class='fas fa-arrow-circle-right nextslid'></i>",
+  nextArrow: "<i class='fa fa-arrow-circle-right nextslid'></i>",
 });
 $('.port-slider').slick({
   arrows: false,
@@ -35,11 +35,13 @@ $('.img-slider').slick({
   nextArrow: "<i class='fa fa-chevron-down nextslid3'></i>",
   centerMode: true,
   centerPadding: "0",
-  asNavFor: '.txt-slider',
+  verticalSwiping: true,
+  focusOnSelect: true,
+  asNavFor: '.details-slider',
 });
 
-// TESTI IMG SLIDER
-$('.txt-slider').slick({
+// TESTI TEXT SLIDER
+$('.details-slider').slick({
   arrows: false,
   fade: true,
   asNavFor: '.img-slider',
