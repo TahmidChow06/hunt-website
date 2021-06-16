@@ -1,4 +1,4 @@
-@media(max-width: 320px) and (max-width: 575px){
+@media(min-width: 320px) and (max-width: 575px){
   nav button i{
     width: 30px;
     height: 30px;
@@ -133,6 +133,9 @@
   }
   #team-part .title p{
     width: 100%;
+  }
+  #team-part .item{
+    margin-top: 15px;
   }
   #sponsor-part {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
