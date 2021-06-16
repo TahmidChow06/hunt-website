@@ -5,7 +5,7 @@ $('.banner-slider').slick({
   speed: 2000,
   autoplay: true,
   infinite: true,
-  prevArrow: "<i class='fas fa-arrow-circle-left prevslid'></i>",
+  prevArrow: "<i class='fa fa-arrow-circle-left prevslid'></i>",
   nextArrow: "<i class='fa fa-arrow-circle-right nextslid'></i>",
 });
 $('.port-slider').slick({
@@ -13,7 +13,25 @@ $('.port-slider').slick({
   autoplay: true,
   infinite: true,
   slidesToShow: 4,
-  // autoplaySpeed: 2000,
+  responsive: [ {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+      }
+    }
+  ]
 });
 $('.venobox').venobox();
 
@@ -26,6 +44,28 @@ $('.service-slider').slick({
   nextArrow: "<i class='fa fa-chevron-down nextslid2'></i>",
   centerMode: true,
   centerPadding: "0",
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        verticalSwiping: false,
+        // vertical: false,
+      }
+    }
+  ]
 });
 // TESTI PART SLIDER
 $('.img-slider').slick({
@@ -38,6 +78,28 @@ $('.img-slider').slick({
   verticalSwiping: true,
   focusOnSelect: true,
   asNavFor: '.details-slider',
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        verticalSwiping: false,
+        vertical: false,
+      }
+    }
+  ]
 });
 
 // TESTI TEXT SLIDER
@@ -53,7 +115,26 @@ $('.sponsor-slider').slick({
   slidesToShow: 5,
   centerMode: true,
   centerPadding: "0",
-  focusOnSelect: true
+  focusOnSelect: true,
+  responsive: [ {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
 });
 
 // COUNTER UP
