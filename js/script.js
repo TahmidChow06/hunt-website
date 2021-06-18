@@ -46,15 +46,15 @@ $('.service-slider').slick({
   centerPadding: "0",
     responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 992,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
       }
     },
     {
@@ -80,15 +80,17 @@ $('.img-slider').slick({
   asNavFor: '.details-slider',
     responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 991,
       settings: {
         slidesToShow: 3,
+        vertical: false,
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 2,
+        vertical: false,
+        slidesToShow: 3,
       }
     },
     {
@@ -123,9 +125,9 @@ $('.sponsor-slider').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 992,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
       }
     },
     {

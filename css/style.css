@@ -802,7 +802,13 @@ nav ul li a:hover{
 #counter-part .rotate{
   transform: rotate(-4.25deg);
 }
+#counter-part .counter-flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 #counter-part .item{
+  width: 210px;
   border: 1px solid #fff;
   text-align: center;
   color: #fff;
